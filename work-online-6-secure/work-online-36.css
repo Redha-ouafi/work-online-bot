@@ -1,0 +1,606 @@
+  * {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header1 {
+ display: flex;
+ flex-wrap: wrap;
+
+ font-size: 1em;
+ background-color: springgreen;
+ border: 0px solid green;
+ padding: 2px;
+}
+
+.header2 {
+ display: flex;
+ flex-wrap: wrap;
+
+  font-size:4em;
+ background-color: green;
+ border: 1px solid green;
+ padding: 10px;
+ color:black;
+}
+
+ .footer {
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
+ background-color: green;
+ border: 0px solid green;
+ padding: 10px;
+ color: black;
+ text-align: center;
+ font-size: 1em;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ }
+
+/* Six buttons with code link to some pages in this project */
+ .button-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+  
+ 
+ }
+
+ .button {
+ display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: white;
+ color: black;
+ border: 1px solid black;
+ border-radius: 3px;
+ font-size: 1em;
+ text-align: center;
+ text-decoration: none;
+   box-shadow: 0 0 10px springGreen;
+ 
+ }
+ 
+ 
+ 
+/* Fixed background */
+        
+body {
+
+   background-color: white;
+   background-image: url('redha-ouafi-bot.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
+   background-size: 100% 100%;
+  
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 14px;
+   color:white;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+    transition: background-image 1s ease-in-out;
+
+    }
+    
+    
+     .header-bot {
+      
+      width: 0;
+      height: 0;
+      border-top:0px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 200px solid green;
+       
+    }
+
+    
+    
+
+
+  .buttonm-group {
+
+ display: flex;
+ flex-wrap: wrap;
+ width: 100px;
+
+ justify-content: center;
+ align-items: center;
+ margin-top: 3px;
+ }
+
+ .buttonm {
+
+  display: inline-block;
+ padding: 5px;
+ margin: 5px;
+ background-color: purple;
+
+  border: 1px solid black;
+ border-radius: 3px;
+ font-size: 1em;
+ color: black;
+ text-align: center;
+ text-decoration: none;
+ }
+
+
+
+
+
+       video {
+    width: 100%;
+    max-width: 600px;
+       box-shadow: 0 0 20px springgreen;
+
+}
+
+
+
+
+
+
+
+
+#downloadBtn {
+    display: block;
+    margin: 10px auto;
+      background-color: white;
+
+}
+
+    #downloadBtnm {
+    display: block;
+    margin: 10px auto;
+     background-color: white;
+}
+
+
+  #downloadBtnm:hover {
+  background-color: springgreen; /* Button color on hover */
+}
+
+
+    #downloadBtn:hover {
+  background-color: springgreen; /* Button color on hover */
+}
+
+ 
+ 
+ 
+
+        .button:hover {
+  background-color: springgreen; /* Button color on hover */
+}
+
+
+        /* Style the container */
+        .image-container {
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+             /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 0px solid green; /* Optional border for visual clarity */
+            padding: 6px; /* Add some padding for readability */
+
+
+        }
+        /* Style the text inside the container */
+        .image-content {
+             display: flex;
+ flex-wrap: wrap;
+
+
+
+
+        }
+
+
+
+           /* Style the container */
+        .text-container {
+
+
+            width: 400px; /* Adjust the width as needed */
+            height: 800px; /* Set the desired height */
+             /* Add scroll bar when content exceeds container height */
+            background-color: green; /* White background */
+            border: 1px solid green; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+
+        }
+        /* Style the text inside the container */
+        .text-content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333; /* Optional text color */
+        }
+
+
+                  
+    
+#newsbot-container {
+  width: 90%;
+  margin: 1px;
+  border-bottom-left-radius: 80px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+#newsbot-list {
+  list-style: none;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  animation: scrollNew 60s linear infinite;
+  justify-content: flex-start; /* ????? ????? */
+}
+
+@keyframes scrollNew {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+#newsbot-list li {
+  padding: 10px;
+  border: 1px solid green;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: black;
+}
+
+#newsbot-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+#newsbot-list:hover {
+  animation-play-state: paused;
+}
+
+#newsbot-list li:hover {
+  background-color: rgba(0, 128, 0, 0.3);
+  color: black;
+}
+
+
+
+
+
+     
+
+/*slider imgs*/
+
+.slider-container {
+    overflow: hidden; /* ????? ?? auto ??? hidden ?????? ?????? ?????? */
+    width: 100%;
+    height: 100%;
+    border: 1px solid black; /* ????? ????? ?? ????? ????? */
+}
+
+.slider {
+    display: flex;
+    animation: slide 60s infinite linear;
+}
+
+.slider:hover {
+    //animation-play-state: paused; /* ????? ?????? ??? ??????? */
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%); /* ??? ?????? ?? ?????? */
+    }
+    100% {
+        transform: translateX(100%); /* ???????? ??? ?????? */
+    }
+}
+
+
+   
+    
+
+   .menuxv {
+            position: relative;
+           
+            
+        }
+
+        .menuxv-button {
+            padding: 6px;
+            background-color: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+            border-radius: 1px;
+            height:auto;
+            width:auto;
+             border: 1px solid green;
+            
+        }
+
+        .dropdownxv {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+           
+            background-color:green;
+            //backdrop-filter:blur(20px);
+            border: 1px solid green;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style-type: none;
+            margin: 0;
+            padding: 3px;
+            //transform: scale(3);
+            color:black;
+            font-size:14px;
+            
+        }
+
+        .dropdownxv li {
+            position: relative;
+            margin:auto;
+            
+        }
+
+        .dropdownxv a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color:rgba(255, 255, 255, 0.3);
+            //backdrop-filter:blur(20px);
+            border:1px solid green;
+           
+        }
+
+        .dropdownxv a:hover {
+         
+              background-color:rgba(0, 0, 0, 0.1);
+            
+             color:white;
+            
+        }
+
+        .submenuxv {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color:rgba(0, 0, 0, 0.4);
+            backdrop-filter:blur(60px);
+            border: 1px solid green;
+            color:white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            list-style-type: none;
+            margin: 0;
+            padding: 3px;
+            z-index: 1000;
+        }
+
+        .dropdownxv li:hover > .submenuxv {
+            display: block;
+
+          
+           
+        }
+
+        .menuxv-button:hover + .dropdownxv,
+        .dropdownxv:hover {
+            display: block;
+        }
+
+
+.btmenu {
+
+ background-color:rgba(255, 255, 255, 0.3);
+ width:100%;
+ height:auto:
+ margin:auto;
+ padding:10px;
+ color:black;
+ border:1px solid green;
+
+
+}
+
+.btmenu:hover {
+ background-color:rgba(0, 0, 0, 0.1);
+ color:white;
+
+}   
+
+    
+        
+        
+
+
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+   
+}
+
+
+
+    .button:hover {
+  background-color: springgreen; /* Button color on hover */
+}
+
+
+
+     #audio-player {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+
+    h4 {
+     position: relative;
+     font-size: 6em;
+     letter-spacing: 15px;
+     color: black;
+     text-transform: uppercase;
+     width: 100%;
+     text-align: center;
+     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+     line-height: 0.74em
+     outline: none;
+     animation: animate 6s linear infinite;
+
+
+
+   }
+
+
+   h4 {
+
+     position: relative;
+     font-size: 8em;
+     letter-spacing: 20px;
+     color: black;
+     text-transform: uppercase;
+     width: 100%;
+     text-align: center;
+     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+     line-height: 0.74em
+     outline: none;
+     animation: animate 6s linear infinite;
+
+   }
+
+
+
+
+       .container6 {
+           width: 70%;
+           height: 250px;
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+       }
+
+       .container6 img {
+           width: 10%;
+           height: 100%;
+           object-fit: cover;
+           border-radius: 10px;
+           border: 2px solid white;
+           transition: all ease-in-out 0.5s;
+       }
+       .container6 img:hover {
+           width: 25%;
+       }
+
+
+
+
+
+
+       .text {
+background: linear-gradient(
+to right,rgba(0, 168, 253), white 30%, springgreen);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradient 3s linear infinite; }
+@keyframes gradient {
+0% { background-position: 0% 75%;}
+50% { background-position: 100% 50%;}
+100% { background-position: 0% 70%;}
+}
+
+
+
+
+
+ /* Flexible layout responsive design */
+
+ .header1 {
+ font-size: 0.5em;
+ padding: 2px;
+ }
+ /* Big red header with red border */
+ .header2 {
+ font-size: 4em;
+ padding: 2px;
+ }
+ /* Six buttons with code link to some pages in this project */
+ .button-group {
+ margin-top: 3px;
+ }
+ .button {
+ padding: 3px;
+ margin: 3px;
+ font-size: 1em;
+ }
+
+  .buttonm-group {
+ margin-top: 3px;
+ }
+ .buttonm {
+ padding: 3px;
+ margin: 3px;
+ font-size: 1em;
+ }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 100%;
+
+  padding: 5px;
+}
+.column img {
+
+  width: 100%;
+  height: auto;
+
+      }
+@media screen and (max-width: 320px) {
+  .column {
+
+    width: 100%;
+  }
+
+
+}
+
